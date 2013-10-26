@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+<table class="UTPPTable">
+    <tr>
+        <td style="width:10%"><img src="~/Recursos/Imagenes/UTPPLogo.png" runat="server" style="height: 49px; width: 96px" /></td>
+        <td class="UTPP">Universidad Tecnológica de Puerto Peñasco</td>
+        <td class="textoTitulo" style="text-align:right;font-style:italic">SISTEMA SCAH</td>
+    </tr>
+</table>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server" class="imagenEncabezado">
+    <link href="~/Estilos/HojaEstilo.css" rel="stylesheet" runat="server" type="text/css" />
+    <script src="/jquery/jquery-1.10.2.min.js" type="text/javascript"></script> 
+    <title>
+        Proyecto SCAH
+    </title>
+</head>
+
+<body>
+    <div id="wrap">
+    <form id="form1" runat="server">
+        <br />
+            <!-- INICIO Encabezado -->
+            <header class="encabezado">                 
+                <table style="width:95%;margin:0 auto 0 auto;">
+                    <tr>
+                        <td style="vertical-align:bottom">
+                            <asp:Menu Width="50%" ClientIDMode="Static" ID="menuPrincipal" Orientation="Horizontal"
+                            ForeColor="Black" Font-Bold="true"
+                            runat="server">
+                            <Items>
+                                    <asp:MenuItem Text="Inicio" Value="Inicio" NavigateUrl="Default.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Ingresar" Value="Ingresar" NavigateUrl="~/Cuenta/Ingreso.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="FAQ" Value="FAQ" NavigateUrl="~/Ayuda.aspx"></asp:MenuItem>
+                            </Items>
+                            </asp:Menu>
+                        </td>
+                        <td style="text-align:right;">
+                            <asp:Panel Visible="false" CssClass="loginView" runat="server" ID="pnlLoginView">
+                                Bienvenido <asp:Label ID="lblNombreUsuario" runat="server" Text="Paramedico Fulano"></asp:Label>
+                                <br />
+                                <asp:LinkButton ID="lbLogOut" runat="server" OnClick="lbLogOut_Click">Salir</asp:LinkButton>
+                            </asp:Panel>
+                        </td>
+                    </tr>
+                </table>
+            </header>
+            <!-- FIN Encabezado -->
+        
+            <!-- INICIO del Contenido--> 
+            
+            <div class="contenidoPagina">
+                <asp:ContentPlaceHolder id="Contenido" runat="server">
+                
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- Fin del Contenido-->
+
+             <!-- INICIO del pie de pagina-->
+            <div>
+                <footer class="pie">
+                    <p style="margin:auto"><%:DateTime.Now.Year%> - Universidad Tecnológica de Puerto Peñasco</p>
+                    <p style="margin:auto">Tecnologías de la Información y la Comunicación</p>
+                </footer>
+            </div>
+            <!-- FIN del pie de pagina-->
+
+        </form>
+    </div>
+</body>
+</html>

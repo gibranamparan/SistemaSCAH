@@ -1,0 +1,186 @@
+﻿body {
+    /*background-color:#017c81;*/
+    background-image: linear-gradient(bottom, rgb(255,255,255) 0%, rgb(0,125,129) 91%);
+    background-image: -o-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(0,125,129) 91%);
+    background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(0,125,129) 91%);
+    background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(0,125,129) 91%);
+    background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(0,125,129) 91%);
+
+    background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0, rgb(255,255,255)),
+	    color-stop(0.91, rgb(0,125,129))
+    );
+
+    min-height: 50%;
+    background-attachment: fixed;
+}
+
+.gridViewEstilo {
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.gridViewEstilo th {
+    background-color:#c3e1e2;
+    box-shadow:initial;
+}
+
+html,body{
+    height:100%;
+}
+
+
+/***********CSS DE MENU****************/
+#menuPrincipal li {
+    width:auto;
+    /*width:100px;*/
+    padding: 5px;
+    font-size:medium;
+}
+
+#menuPrincipal li:hover {
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ffc238 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffc238)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ffc238 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#ffc238 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ffc238 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#ffc238 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffc238',GradientType=0 ); /* IE6-9 */
+}
+
+    #menuPrincipal li ul > li:hover {
+        width:auto;
+    }
+
+    #menuPrincipal li ul > li:first-child:hover {
+        border-top-right-radius:5px;
+    }
+
+    #menuPrincipal li ul > li:last-child:hover {
+        border-bottom-right-radius:5px;
+        border-bottom-left-radius:5px;
+    }
+
+#menuPrincipal >ul > li,#menuPrincipal li ul  {
+    background: #e5e5e5; /* Old browsers */
+    background: -moz-linear-gradient(top, #e5e5e5 0%, #383838 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#383838)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e5e5e5 0%,#383838 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e5e5e5 0%,#383838 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e5e5e5 0%,#383838 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #e5e5e5 0%,#383838 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#383838',GradientType=0 ); /* IE6-9 */
+}
+
+#menuPrincipal li ul {
+    font-size:small;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+    box-shadow: 5px 5px 5px #888888;
+    
+}
+
+#menuPrincipal > ul > li {
+    margin-left:1px;
+    margin-right:1px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+/***************************/
+
+.encabezado,.encabezado table,.encabezado td {
+    margin-bottom:0px;
+    padding:0px;
+    border-collapse:collapse;
+    width:99%;
+}
+
+    .encabezado table {
+        width:100%;
+    }
+
+
+.contenidoPagina{
+    background-color:white;
+    border-color:#3a3a3a;
+    border-style:solid;
+    margin:0 auto 0 auto;
+    padding:20px;
+    height:auto;
+    width:95%;
+}
+
+.textoTitulo {
+    font-size: x-large;
+    font-weight: 700;
+    color:#444;
+    text-align:center;
+}
+
+.UTPP {
+    color:#444;
+    font-style:italic;
+    font-size:x-large;
+    width: 268px;
+}
+
+.UTPPTable {
+    background-color:#d1cfcf;
+     width:100%;
+     border-style:solid;
+     border-color:white;
+}
+
+.pie {
+    border-top:solid;
+    border-top-color:black;
+
+    position: relative;
+    margin-top:2%; /* altura en px del footer con valor negativo */
+    text-align: center;
+}
+
+.panelContenido {
+    padding: 5px;
+}
+
+.loginView {
+    width:200px;
+    padding:5px;
+    background: #e5e5e5; /* Old browsers */
+    background: -moz-linear-gradient(top, #e5e5e5 0%, #383838 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#383838)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e5e5e5 0%,#383838 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e5e5e5 0%,#383838 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e5e5e5 0%,#383838 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #e5e5e5 0%,#383838 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#383838',GradientType=0 ); /* IE6-9 */
+
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+/*JQUERY MENU*/
+
+.ui-panel-inner {
+            padding:0px; /*make the buttons flush edge to edge*/
+        }
+        .ui-controlgroup {
+            margin:0; /*make the buttons flush to the top*/
+        }
+        #header {
+            height:54px;
+        }
+        #bars-button {
+            margin:7px;
+        }
+/*********************/
+
+
+
+    

@@ -1,0 +1,205 @@
+﻿body {
+}
+
+/*********FRAP**************/
+
+.cuerpoFomulario,.cuerpoFomulario tr{
+    vertical-align:top;
+    /*width: 950px;*/
+    width: 100%;
+}
+
+.cuerpoFomulario>tbody>tr>td {
+    padding:.5%;
+}
+
+.tituloFRAP {
+    color:#017c81;
+    font-size:x-large;
+    text-align:left;    
+}
+
+.subtitulosFRAP {
+    border:solid;
+    border-width:thin;
+    border-color:#017c81;
+    background-color:#017c81;
+    color:white;
+    font-size:larger;
+    font-weight:bold;
+    padding:3px;
+    text-align:center;
+}
+
+.nombreCampos {
+    font-weight:bold;
+}
+
+.tableTituloFRAP {
+    /*width:950px;*/
+    width: 100%;
+    border-bottom:solid;
+    border-bottom-color:#017c81;
+    border-bottom-width:thick;
+}
+
+.subindicesTablasInternasSoporteVitalAvanzado td>div {
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+    color: #017c81;
+}
+.tablaInterna {
+    /*width:470px;*/
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tablaInterna>tbody>tr>td, .tablaInterna th{
+    border:solid;
+    border-width:thin;
+    padding-right:5px;
+    padding-left:5px;
+}
+
+    .tablaInterna#SoporteVital,.tablaInterna#Trauma {
+        width:60%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+.tablaAntecedentes {
+    /*width:470px;*/
+    width: 100%;
+    border:solid;
+    border-width:thin;
+    border-color:black;
+    border-collapse:collapse;
+    
+}
+
+.tablaAntecedentes th{
+    background-color:#017c81;
+    color:white;
+    font-size:larger;
+    font-weight:bold;
+    text-align:center;
+}
+
+.tablaAntecedentes td {
+    padding-right:8px;
+    padding-left:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+.tablaUbicacionServicio,.tablaUbicacionServicio input,#tablaDatosPersonales,#tablaDatosPersonales input,divLesiones {
+    width:100%;
+    /*width:250px;
+    height:20px;*/
+}
+
+     .tablaUbicacionServicio tr>td:first-child{
+         width:20%;
+    }
+     #tablaDatosPersonales tr>td:first-child{
+         width:32%;
+    }
+
+#rblRANV {
+    margin-top:.5em;
+    margin-bottom:.5em;
+    font-size:x-large;
+    font-weight:bold;
+}
+
+    #rblRANV td>span {
+        padding:2px;
+    }
+
+#grvUltimosFRAP {
+    width:100%;
+}
+#rblRANV span, #grvUltimosFRAP td[class]{
+    font-size:x-large;
+    text-align:center;
+    vertical-align:central;
+    border:1px solid black;
+}
+
+    .validacionError#rblRANV { 
+        color:black;       
+        border:5px solid red;
+    }
+
+.validacionError#rblRANVlayer {
+    background-color:rgba(255, 0, 0, 0.30);
+}
+
+#rblRANV span[id='R'], .RANVR{
+    background-color:red;
+}
+#rblRANV span[id='A'], .RANVA{
+    background-color:yellow;
+}
+#rblRANV span[id='N'], .RANVN{
+    background-color:black;
+    color:white;
+}
+#rblRANV span[id='V'], .RANVV{
+    background-color:green;
+}
+
+#canvasLesiones, #canvasLesiones2{
+    background-image:url('../Recursos/Imagenes/FRAP/seleccionLesiones.jpg');
+}
+
+.contenedorImagenLesiones {
+    border-style:solid;
+    border-width:thin;
+    border-color:black;
+    border-collapse:collapse;
+    width:290px;height:370px;
+}
+
+.contenedorImagenLesiones, .cssRblSeleccionLesiones {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.contenedorImagenLesiones td {
+    height:338px;
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+}
+
+.cursorBorrador {
+    cursor:url('../Recursos/Imagenes/FRAP/borrador.png'),auto;
+}
+
+.cursorRojo {
+    cursor:url('../Recursos/Imagenes/FRAP/redmouse.png'),auto;
+}
+
+.señalLesion {
+    color:red;
+    font-size:smaller;
+    font-weight:bold;
+    font-family:Arial;
+}
+
+.validacionError {
+    color:red;
+    background-color:pink;
+    border:2px solid red;
+}
+
+.displayNone {
+    display:none;
+}
+
+div.ui-datepicker{
+ font-size:12px;
+}
+/***************************/
